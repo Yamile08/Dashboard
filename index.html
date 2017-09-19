@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+<head>
+<body>
+    <header class="header contenedor"> <!-- Header -->
+      <div class="contenedor-title">
+        <h1 class="title-header">Material Admin 2.0</h1>
+      </div>
+      <span><i id="mostrar"class="material-icons button-menu icon-menu color-icon ">menu</i></span>
+      <div class="contenedor-input">
+        <input type="search" name="" value="" class="input-search" placeholder="Search for people, files, documents..." >
+      </div>
+      <div class="contenedor-icon">
+        <span><i class="material-icons color-icon icon-search">search</i></span>
+        <span><i class="material-icons color-icon ">email</i></span>
+        <span><i class="material-icons color-icon icon-notifications">notifications</i></span>
+        <span><i class="material-icons color-icon icon-check_circle">check_circle</i></span>
+        <span><i class="material-icons color-icon icon-apps">apps</i></span>
+        <span><i class="material-icons color-icon icon-more_vert">more_vert</i></span>
+        <span><i class="material-icons color-icon icon-sms">sms</i></span>
+      </div>
+    </header>
+    <div id="slider-menu" class="slider-menu">
+      <div class="informacion-usuario">
+      <div class="imagen-usuario">
+          <img class="usuario" src="https://static.platzi.com/media/avatars/yamithatabaresmarin_9be399b6-dedc-472c-a710-58a7bbe59fe4" width="30px" height="30px" alt=""/>
+      </div>
+      <div class="info-usuario">
+        <h2 class="nombre">Malinda Hollaway</h2>
+        <span class="email">malinda-h@gmail.com</span>
+      </div>
+      </div>
+          <nav class="sub-menu">
+              <ul class="">
+                  <li class="color"><a href=""><i class="material-icons icon-menu">home</i>Home</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">view_week</i>Variants</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">format_underlined</i>typography</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">widgets</i>Widges</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">view_list</i>Tables</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">library_books</i>Forms</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">swap_calls</i>User Interface</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">group_work</i>Javascript Components</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">trending_up</i>Charts</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">event</i>Calendar</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">photo</i>Photo Gallery</a></li>
+                  <li><a href=""><i class="material-icons icon-menu">filter_none</i>Sample pages</a></li>
+              </ul>
+          </nav>
+    </div>
+    <div class="contenedor-items">
+      <div class="contenedor-title-b">
+        <div class="title-b">
+          <h2>DASHBOARD</h2>
+          <span>Welcome to the unique Material Desing Admin Web app experience!</span>
+        </div>
+        <div class="icons-items">
+          <span><i class="material-icons">trending_up</i></span>
+          <span><i class="material-icons">done_all</i></span>
+          <span><i class="material-icons">more_vert</i></span>
+        </div>
+      </div>
+      <div class="articles">
+          <section class="item-1 item">
+            <div class="text-item">
+              <h3>987.459</h3>
+              <span>Total Website sales</span>
+            </div>
+            <div class="image-item">
+              <img src="images/items.png" alt="">
+            </div>
+          </section>
+          <section class="item-2 item">
+            <div class="text-item">
+              <h3>356.785K</h3>
+              <span>Total Website sales</span>
+            </div>
+            <div class="image-item">
+              <img src="images/items.png" alt="">
+            </div>
+          </section>
+          <section class="item-3 item">
+            <div class="text-item">
+              <h3>$58.778</h3>
+              <span>Total sales</span>
+            </div>
+            <div class="image-item">
+              <img src="images/items.png" alt="">
+            </div>
+          </section>
+          <section class="item-4 item">
+            <div class="text-item">
+              <h3>214</h3>
+              <span>Total Support sales</span>
+            </div>
+            <div class="image-item">
+              <img src="images/items.png" alt="">
+            </div>
+          </section>
+        </div>
+        <div class="contenedor-graficas">
+          <section class="grafica-1">
+            <div class="title-grafica">
+              <h3>Sales Statistics</h3>
+              <span>Vestibulum purus quam scelerisque,molis nonumy metus</span>
+            </div>
+            <div class="image-grafica">
+              <img class="img-grafica" src="images/grafica1.png" alt="">
+            </div>
+          </section>
+          <section class="grafica-2">
+            <div class="title-grafica">
+              <h3>Growth Rate</h3>
+              <span>Commodo lotus nisi erat porttitor ligula eget lacinia odio semnec elit</span>
+            </div>
+            <div class="image-grafica">
+              <img class="img-grafica" src="images/grafica2.png" alt="">
+            </div>
+          </section>
+        </div>
+    </div>
+<script>
+
+    const mostrarMenu = document.getElementById('mostrar');
+    const slidermenu = document.getElementById('slider-menu');
+
+    mostrarMenu.addEventListener('click', () => slidermenu.classList.toggle('active'));
+
+    /*mostrarMenu.addEventListener('click', () => {
+      slidermenu.classList.toggle('active');
+    });*/
+
+    /*mostrarMenu.addEventListener('click', function() {
+        slidermenu.classList.toggle('active');
+    });*/
+
+</script>
+</body>
+</html>
